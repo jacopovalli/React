@@ -1,0 +1,14 @@
+body{
+  background-color: rgb(215, 0, 219);
+}
+
+h1{
+  color: black;
+}
+
+.sudents_list{
+  color: black;
+  font-size: 1.3rem;
+  list-style: none;
+  cursor: pointer;
+}

@@ -1,0 +1,67 @@
+#React
+
+[https://react.dev/learn/react-developer-tools]
+______________________________________________
+
+1. Create a folder
+
+2. Access it
+
+3. Open an Editor (VSC, in my case)
+
+4. Open a terminal, leave it open, and run the command **npx create-react-app project_name** and follow the instructions
+
+5. **Access the project folder from the terminal** included in the folder created earlier
+
+6. npm i
+
+7. Open a terminal, which we will leave open, and make sure you are in the React project folder you are working on, and run the command:
+
+**npm run start** ***or*** **npm start**
+
+8. Go to src and open the **App.js** file and make a modification, which will be visible in the browser in the previously opened window by running the command at step 5.
+
+9. We will always work through the **src** folder and the files contained in it. We can also modify the **index.html** file in public, ***but it is through the file with the same name - index.html - present in src that we directly affect what we see in the browser through the file in public*** (public is related to what we see on the client side, as in Laravel).
+
+10. Install the VSC extension called ES7+ React/Redux/React-Native snippets by dsznajder to have React shortcuts.
+
+11. Create a **components** folder in src
+
+12. In the new components folder, **create a JS file** for a component (for example, component_1.js) - **component names in React must always start with an uppercase letter!**
+
+***Keep in mind that when we initially ran the command npx create-react-app project_name, we technically created a component, which in that case is the App.js file found in src.***
+
+
+13. **Open** the newly created component, the **Component_1.js** file, and, using one of the shortcuts allowed by the previously downloaded extension, write:
+
+**rafce**
+
+***rafce is a shortcut that creates an arrow function.***
+
+Or, write:
+
+**rfce**
+
+***rfce creates a method without an arrow function syntax.***
+
+
+14. In **App.js**, import the component created above using ES6 syntax:
+
+**import component_1 from './components/Component_1';**
+
+**Every component must always return something, and it cannot return more than one dynamically created HTML element at a time. So, if, for example, we want to return an <h1> and an <h2>, either wrap them in a <div> element, which will be identified as a single element; or, we have two options:**
+
+
+**a) <> element content </>**
+
+**b) <React.Fragment>element content</React.Fragment>**
+
+
+**The return statement must always be followed by parentheses that enclose the returned element. If these parentheses are not present, the opening HTML tag must necessarily be on the same line as the return statement.**
+
+***These HTML tags are actually JSX tags, i.e., JavaScript for React, and unlike "pure" HTML tags, they must always (!) be closed.***
+
+
+16. **To nest multiple subcomponents within a primary component: declare different subcomponents (functions that return subelements) and then, in the return statement of the primary component, invoke them as JSX tags.**
+
+17. The **index.css** file found in **src** is also linked to the **index.html** file found in **public**: therefore, we will work on that CSS for style changes.
