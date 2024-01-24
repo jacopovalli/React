@@ -1,9 +1,14 @@
+import React from 'react';
 import './App.css';
 import Component_1 from './components/Component_1';
+import Products from './components/Products';
 
 function App() {
   return (
-    <Component_1></Component_1>
+    <React.Fragment>
+        <Component_1></Component_1>
+        <Products></Products>
+    </React.Fragment>
     );
   }
 
