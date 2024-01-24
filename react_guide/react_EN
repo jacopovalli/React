@@ -65,3 +65,33 @@ Or, write:
 16. **To nest multiple subcomponents within a primary component: declare different subcomponents (functions that return subelements) and then, in the return statement of the primary component, invoke them as JSX tags.**
 
 17. The **index.css** file found in **src** is also linked to the **index.html** file found in **public**: therefore, we will work on that CSS for style changes.
+______________________________________________
+
+**Creating a Card Component:**
+
+
+18. Create a component for the card (in our case, **"Products.js"**).
+
+19. [Not necessary but required if you want to use the <React.Fragment></React.Fragment> syntax] **Import React in "App.js" with import React from 'react';**
+
+20. **Insert Bootstrap's JavaScript and CSS CDNs respectively into the body and head of the "index.html" file located in the "public" folder.**
+
+21. In our component's "Products" function, return the Bootstrap card.
+
+***Remember that, while working in JSX, you need to ensure that each tag is closed properly, and when it comes to classes, unlike in JavaScript, you should use "className" instead of "class."***
+
+22. In "App.js," import your component.
+
+23. **In the return statement of the "App.js" function, embed your imported component:**
+
+***at this point, since you have more than one component embedded in the return statement of the function, you must enclose everything in a fragment, using one of the following JSX syntaxes: <></>, <div></div>, or <React.Fragment></React.Fragment>.***
+
+24. Now, you can work on the card within the component:
+
+**Declare a constant for the image path, a constant for the title, one for the body, and if necessary, one for the button text.**
+
+25. **In React, when you need to display the value of a constant or variable within an element, you must instruct the program to integrate JavaScript code. To do this, enclose the JavaScript code in double curly braces: { JavaScript code }.**
+
+***The result, for example, would be (with two pairs of curly braces)***
+
+*** {${constant_or_variable_value}} ***
