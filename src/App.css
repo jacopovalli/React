@@ -6,6 +6,18 @@ h1{
   color: black;
 }
 
+h2{
+  color: black;
+}
+
+h5{
+  color: whitesmoke;
+}
+
+h6{
+  color: blueviolet;
+}
+
 .sudents_list{
   color: black;
   font-size: 1.3rem;

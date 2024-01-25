@@ -95,3 +95,74 @@ ______________________________________________
 ***The result, for example, would be (with two pairs of curly braces)***
 
 *** {${constant_or_variable_value}} ***
+______________________________________________
+
+
+**Props:**
+
+
+26. **Props are the formal parameters of functions that return the elements of a component.**
+
+***props is a standard conventional term; it's a good practice to use it for code clarity.***
+
+
+27. In the component (for this occasion, a third component called **Component_props.js** was created), we pass the formal parameter **props**.
+
+28. By logging props, you can see that it is an object.
+
+29. In **App.js**, for the embedded component, we added a property (name with the value 'John') using the following syntax:
+
+ ***key={value}***
+
+
+30. Now, when you log props, you can see that the object has a property, in our case, the name property with the value 'John'.
+
+31. **In App.js, we instantiate 3 objects (in our case: hello_1, hello_2, hello_3).**
+
+32. **By modifying the properties of the embedded components, you can see them in the console. The modification is done using the following syntax:**
+
+***<component key={object_name.property}></component>***
+
+
+32. **In the component file (Component_props.js), we passed the actual parameters derived from the objects instantiated in App.js and from there passed as attributes of the embedded component object to the element to be rendered returned by the component's function.**
+
+______________________________________________
+______________________________________________
+***Each Component is an object whose value is the element to be rendered returned by the function.***
+
+***Props are the Component itself.***
+
+***Props can be assigned properties (key: value) that we can give through the discussed syntax, eventually fetching them from specifically instantiated objects.***
+______________________________________________
+______________________________________________
+
+
+33. **Another more convenient and concise way to pass properties to embedded components from instantiated objects is through the ***Spread Operator*** introduced by the curly braces related to JSX Syntax:**
+
+***<component {...object_name}></component>***
+
+
+34. Subsequently, in the component file, you can perform **Object Deconstruction**:
+
+***const {key, key} = props;***
+
+
+35. **Now, you can modify the syntax within the function that returns the elements to be rendered, passing {key} instead of {props.key}. For example:**
+
+***<h2>{key}</h2>***
+______________________________________________
+
+
+**Props Children:**
+
+
+36. **Props children** are properties assignable to specific Components.
+
+In React, **children** is a **reserved word**.
+
+**We can implement a props child within the JSX tag related to the embedded component in the JavaScript "management file" (for example, in our case, App.js).**
+
+**By implementing it as a ***<React.Fragment></React.Fragment>***, we can pass it to the Component, and if that Component is embedded multiple times, we can pass it just once if desired, by inserting it only inside the tag we want.**
+
+**In the Component file, pass ***{children}*** in the object props destructuring, and also inside the fragment where you want to render it, using the JSX syntax ***{children}***.
+______________________________________________
