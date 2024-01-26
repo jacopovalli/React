@@ -2,22 +2,21 @@ import React from 'react';
 import './App.css';
 import Component_1 from './components/Component_1';
 import Products from './components/Products';
-import Component_props from './components/Compontent_props';
-import Salute_fetch from './components/Salute_fetch';
+import Component_props from './components/Component_props';
 
 //Objects that provide the actual parameter to the props [see point 31 in react_guide files]
 const hello_1 = {
-  salute: 'Ciao, ',
-  student: 'Jacopo'
+  salute: 'Good Morning, ',
+  student: 'Miles'
 };
 
 const hello_2 = {
-  salute: 'Hello, ',
-  student: 'Raffaele'
+  salute: 'Guten Tag, ',
+  student: 'Klaus'
 };
 
 const hello_3 = {
-  salute: 'Bonjour, ',
+  salute: 'Goog Morning ',
   student: 'Luca'
 };
 
@@ -43,11 +42,9 @@ function App() {
     {/* Vedi punto 36 del file react.md */}
     <Component_props {...hello_3}>
       <React.Fragment>
-        Aula::12 founder
+        (shoegaze pioneer)
       </React.Fragment>
     </Component_props>
-
-    <Salute_fetch></Salute_fetch>
 
     </React.Fragment>
     );

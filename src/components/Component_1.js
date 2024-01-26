@@ -13,16 +13,28 @@ const Component_1 = () => {
 
   const Title = ()=>{
     return(
-      <h1>React Class</h1>
+      <div className='container-fluid'>
+        <div className='row justify-content-center'>
+          <div className='col-12 col-md-6'>
+              <h1 className='pt-5 pb-4 text-start'>React Class</h1>
+          </div>
+        </div>
+      </div>
       )
     }
 
     const Students = ()=>{
       return(
-        <ul class="students_list">
-        <li>Miles Davis</li>
-        <li>Kevin Shields</li>
-        <li>Klaus Schulze</li>
-        </ul>
+        <div className='container-fluid'>
+                <div className='row justify-content-center'>
+                        <div className='col-12 col-md-6'>
+                                <ul className="list_items text-start py-3">
+                                      <li>[Miles Davis</li>
+                                      <li>Klaus Schulze</li>
+                                      <li>Kevin Shields]</li>
+                                </ul>
+                          </div>
+                  </div>
+        </div>
         )
       }

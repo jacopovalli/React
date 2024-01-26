@@ -9,20 +9,28 @@ const Compontent_props = (props) => {
 
   return (
     <React.Fragment>
-    <article className="my-5">
 
-    {/*       See point 32 in react_guide files
+    <div className='container-fluid'>
+      <div className='row justify-content-center'>
+        <div className='col-12 col-md-6'>
+          <article className="text-start my-3">
 
-    <h2>{props.salute}</h2>
-  <h5>{props.student}</h5> */}
+              {/*       See poin 32 inreact_guide files
 
-  {/* See  point 33 in react_guide files*/}
+              <h2>{props.salute}</h2>
+              <h5>{props.student}</h5> */}
 
-  <h2>{salute}</h2>
-  <h5>{student}</h5>
-  <h6>{children}</h6>
+              {/* See point 33 in react_guide files */}
 
-  </article>
+              <h2 className='d-inline'>{salute}</h2>
+              <h4 className='d-inline'>{student}</h4>
+              <h6 className='fst-italic '>{children}</h6>
+
+        </article>
+      </div>
+    </div>
+  </div>
+
   </React.Fragment>
   )
 }

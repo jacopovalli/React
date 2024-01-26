@@ -1,26 +1,77 @@
+/*Palette*/
+:root{
+  --black: rgb(0, 0, 0);
+  --white: rgb(239, 239, 239);
+  --gray: rgb(54, 54, 54);
+  --orange: rgb(252, 71, 5);
+}
+/*_____________________________________*/
+
 body{
-  background-color: rgb(215, 0, 219);
+  background-color: var(--orange);
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1{
-  color: black;
+  color: var(--black);
+  font-weight: bold;
+  padding-left: 2rem;
 }
 
 h2{
-  color: black;
+  color: var(--black);
 }
 
-h5{
-  color: whitesmoke;
+h4{
+  color: var(--white);
 }
 
 h6{
-  color: blueviolet;
+  color: var(--gray);
+  font-weight: bolder
 }
 
-.sudents_list{
-  color: black;
+article{
+  padding-left: 1.9rem;
+}
+
+.list_items{
+  color: var(--black);
   font-size: 1.3rem;
   list-style: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+/*_____________________________________*/
+
+
+/*Card*/
+.card{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.card-img-top{
+  border-radius: 0%;
+}
+
+.card-body{
+  background-color: var(--white);
+}
+
+.btn{
+  background-color: var(--black);
+  color: var(--white);
+  border: 0.05rem solid var(--black);
+  border-radius: 0%;
+  font-size: 0.89rem;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: var(--white);
+  color: var(--black);
+  border: 0.05rem solid var(--black);
+  font-size: 0.89rem;
   cursor: pointer;
 }
